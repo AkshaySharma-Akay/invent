@@ -2,7 +2,9 @@
 __pycache__
 myvenv
 db.sqlite3
-/static
+pics
+jquery
+font-awesome
 .DS_Store
 *.*~
 secret_settings.py

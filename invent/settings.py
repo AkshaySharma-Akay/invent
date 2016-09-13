@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'mypress.apps.MypressConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
