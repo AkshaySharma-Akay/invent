@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+  <title>{% block title %} MyPress {% endblock %}</title>
+  <meta charset='utf-8'/>
+  {% load static%}
+  <link rel='stylesheet' type='text/css' href="{% static 'blog/css/base.css'%}"/>
+  <link rel='stylesheet' type='text/css' href="{% static 'blog/css/post.css'%}"/>
+  <link rel='stylesheet' type='text/css' href="{% static 'blog/css/font-awesome/css/font-awesome.css'%}"/>
+</head>
+<body>
+
+<header id='header'>
+  <hgroup id='header-top'>
+  	<section class='header-title'>
+      <a href='#'>Invent Studio</a>
+    </section>
+  	<nav class='nav header-nav nav-left'>
+  		<ul>
+  			<li><a href='#'><i class='fa fa-github'></i></a></li>
+        <li><a href='#'><i class='fa fa-twitter'></i></a></li>
+        <li><a href='#'><i class='fa fa-linkedin'></i></a></li>
+        <li><a href='#'><i class='fa fa-facebook'></i></a></li>
+        <li><a href='#'><i class='fa fa-google-plus'></i></a></li>
+    	</ul>
+  	</nav>
+    <nav class='nav header-nav nav-right'>
+      <ul>
+        <li><a href='#'><i class='fa fa-sign-in'></i></a></li>
+  			<li><a href='#'><i class='fa fa-user-plus'></i></a></li>
+    	</ul>
+    </nav>
+  </hgroup>
+  <nav class='nav nav-flat'>
+    <ul>
+      <li><a href='#'><i class='fa fa-home'></i></a></li>
+      <li><a href='#'>Blog</i></a></li>
+      <li><a href='#'>Django Projects <i class='fa fa-angle-down'></i></a></li>
+      <li><a href='#'>Python</a></li>
+      <li><a href='#'>Flask <i class='fa fa-angle-down'></i></a></li>
+      <li><a href='#'>PHP</a></li>
+      <li><a href='#'>JQuery</a></li>
+      <li><a href='#'>Contact</i></a></li>
+      <li><a href='#'>About</i></a></li>
+    </ul>
+  </nav>
+</header>
+<section class='blog-note'>
+  <article>
+      <h1>"Don't count the days, make the days count."</h1>
+      <span> - Muhammad Ali</span>
+  </article>
+</section>
+  {% block content %} {% endblock%}
+</body>
+</html>

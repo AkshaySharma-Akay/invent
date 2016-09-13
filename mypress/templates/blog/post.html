@@ -1,0 +1,47 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{# comment load the files now #}
+{% load staticfiles%}
+<!--
+
+  post + sidebar
+
+-->
+{% for a in post %}
+<section id='container'>
+  <section id='post'>
+    <article class='post-article'>
+      <hgroup class='post-title'>
+        <h1>{{ a.post_title }}</h1>
+        <h2>
+          Author : <i class='fa fa-user'></i> {{ a.post_author}} | Published <i class='fa fa-calendar'></i> {{a.pub_date}} |
+          Share Post
+          <a href='#'><i class='fa fa-twitter'></i></a>
+          <a href='#'><i class='fa fa-facebook'></i></a>
+          <a href='#'><i class='fa fa-google-plus'></i></a>
+        </h2>
+      </hgroup>
+      <p>
+        <img class='post-img' src="{% static 'blog/pics/infinite-road.jpg' %}" alt=''/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ a.post_article}}
+  </p>
+{% endfor %}
+    </article>
+  </section>
+  <aside id='sidebar'>
+    <nav class='sidebar-nav'>
+      <span>Popular Posts</span>
+      <ul>
+        <li><a href='#'>Introduction To Larvel Web FrameWork</a></li>
+        <li><a href='#'>NodeJS Vs Django Vs Larvel Vs GoLang</a></li>
+        <li><a href='#'>Tools you must be using in web development</a></li>
+        <li><a href='#'>Django Templating Language Vs Jinja 2</a></li>
+        <li><a href='#'>Why using Flask is better for small Applications over using Django</a></li>
+        <li><a href='#'>Quora : Why and How it is different from other Social Discussion Forums</a></li>
+      </ul>
+    </nav>
+  </aside>
+</section>
+
+{% endblock%}
