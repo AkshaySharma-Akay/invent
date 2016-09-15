@@ -1,111 +1,76 @@
 body{
   margin:0px;
   padding:0px;
-  font-family:'Ubuntu';
+  font-family: serif;
 }
 
 /*
   Header
 */
 
-#header{
+body{
+  padding:0px;
+  margin:0px;
 }
-#header-top{
-  width:90%;
-  padding:0 5%;
+.header-icons{
   display:flex;
   flex-direction:row;
-  background-color:#222;
+  background-color:#333;
+  width:90%;
+  padding:0 5%;
+}
+.header-nav{
+  flex:1 1 auto;
+  display:flex;
+}
+.nav-right{
+  justify-content: flex-end;
+}
+.header-nav ul{
+  list-style:none;
+  margin:0px;
+  padding:0px;
+  display:flex;
+}
+.header-nav ul a{
+  display:inline-block;
+  text-decoration:none;
+}
+.header-top-nav a{
+  color:#eee;
+  padding:10px 15px;
+  font-size:12px;
+  font-weight:bold
 }
 
 .header-title{
-  flex:1 1 auto;
-  order:2;
 }
-.header-title a{
+.header-title h1{
+  margin:0px;
   display:block;
-  text-decoration:none;
-  font-weight:bold;
-  color:#fff;
-  font-size:24px;
-  height:24px;
-  padding:10px;
-}
-.nav-right{
-  flex:1 1 auto;
-  order:3;
-}
-.nav-left{
-  flex:1 1 auto;
-  order:1;
-}
-.nav-right ul{
-  justify-content: flex-end;
-}
-.nav-left ul{
-  justify-content: flex-start;
+  padding:30px 0;
+  text-align:center;
+  color:#B31617;
+  font-size:30px;
 }
 
-.nav ul{
-  list-style:none;
-  margin:0;
-  padding:0;
-  display:flex;
-  width:100%;
+.header-main-nav{
+  width:90%;
+  padding:0 5%;
+  text-align:center;
+  background-color:#fcfeff;
+  box-shadow:0 0 2px 1px #eee;
 }
-.nav ul a{
-  display:inline-block;
-  text-decoration: none;
+.header-main-nav ul{
+  text-align:center;
 }
-
-.header-nav a{
-  font-size:16px;
-  padding:14px 15px;
-  color:#fff;
-}
-
-
-.nav-flat{
-  background-color:#F9F9F9;
+.header-main-nav a{
+  color:#333;
+  padding:25px 15px;
+  font-size:14px;
   font-weight:600;
-  box-shadow:0 1px 2px 1px #777;
-}
-.nav-flat ul{
-  justify-content: center;
-}
-.nav-flat a{
-  color:#222;
-  padding:15px 15px;
   transition:all 0.5s ease-in;
 }
-.nav-flat a:hover{
-  color:#4A90E2;
-}
-
-
-/*
-
-*/
-.blog-note{
-  display:block;
-  background-color:#fff;
-  text-align:center;
-  width:80%;
-  box-shadow:0 0 2px 1px #ddd;
-  padding:30px 10%;
-}
-.blog-note h1{
-  display:block;
-  font-size:24px;
-  font-weight:bold;
-  color:#777;
-  font-style:italic;
-  margin:0;
-  padding-bottom:20px;
-}
-.blog-note span{
-  display:block;
-  text-align:right;
-  font-weight:bold;
-  color:#4A90E2;
+.header-main-nav a:hover{
+  color:#B31617;
 }
